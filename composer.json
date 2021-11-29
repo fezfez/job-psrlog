@@ -1,0 +1,38 @@
+{
+  "name": "fezfez/job-psrlog",
+  "homepage": "https://github.com/fezfez/job-runner",
+  "license": "MIT",
+  "description": "",
+  "authors": [
+    {
+      "name": "Stéphane Demonchaux",
+      "email": "demonchaux.stephane@gmail.com",
+      "homepage": "https://github.com/fezfez"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "psr/log": "^1.1",
+    "fezfez/job-runner": "^0.1"
+  },
+  "require-dev": {
+    "doctrine/coding-standard": "^9.0",
+    "infection/infection": "^0.25.3",
+    "phpunit/phpunit": "^9.5.10",
+    "psalm/plugin-phpunit": "^0.16.1",
+    "vimeo/psalm": "^4.13.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fezfez\\JobRunner\\PsrLog\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Fezfez\\JobRunner\\PsrLog\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
